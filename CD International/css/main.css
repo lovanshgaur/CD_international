@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background: url(../assets/img/bg-repeat-2.webp);
+}
+.load{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load img{
+    height: 100%;
+    width: auto;
+}
+main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: auto;
+}
+.card{
+    width: 100%;
+    height: 80%;
+    border-radius: 1rem;
+    background-color: azure;
+    box-shadow: 2px 2px 4px black;
+    position: relative;
+}
+.campus-profile{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.campus-profile-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+    border-radius: 1rem;
+}
+.campus-profile img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.campus-profile-hover video{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .campus-profile{
+    display: none;
+}
+.card:hover .campus-profile-hover{
+    display: block;
+}
+.campus-details{
+    border-radius: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: azure;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.111);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
